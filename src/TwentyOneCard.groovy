@@ -12,14 +12,15 @@ class TwentyOneCard extends Card
 
     def int getRank()
     {
-        if (rank == ACE)
+        int superRank = super.getRank()
+        if (superRank == ACE)
         {
             return 11
         }
-        if (rank > 10)
+        if (superRank > 10)
         {
             return 10
         }
-        return rank
+        return superRank
     }
 }

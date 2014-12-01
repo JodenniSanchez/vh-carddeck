@@ -25,6 +25,11 @@ class Card
         this.suit = suit
     }
     
+    def int getRank()
+    {
+        return rank
+    }
+
     /** 
      * Returns a string representation of the card
      */
